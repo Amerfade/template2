@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* height:2300px; */
+    background-color:white;
+}
+
+a{
+    text-decoration: none;
+    
+}
+/* =======================header=================== */
+
+.contener{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+}
+
+.logo{
+    margin: 30px 0px;
+}
+
+.header{
+    margin-top: 40px;
+    
+}
+
+.header a{
+    margin: 40px 15px;
+    
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(102, 68, 12);
+}
+.header{
+    margin-right: 10px;
+}
+.icon{
+    margin: 40px 20px;
+    font-size: 17px;
+}
+
+.a1{
+    position: relative;
+    padding: 10px 10px;
+
+}
+
+
+.a1::after{
+    content: "";
+    position: absolute;
+
+    border-width: 0px 2px;
+    border-style:solid;
+    transform: scaleY(0);
+    transform-origin: center;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+
+    width: 110%;
+    height: 111%;
+    color: rgb(102, 68, 12);
+
+}
+
+.a1:hover::after{
+    transform: scaleY(1);
+    transition: .3s;
+}
+
+
+.a1::before{
+    content: "";
+    position: absolute;
+
+    border-width: 2px 0px 2px 2px;
+    border-style:solid;
+    transform: scaleX(0);
+    transform-origin: left;
+
+    left: 0;
+    top: 0;
+    
+
+    width: 112%;
+    height: 100%;
+    color: rgb(102, 68, 12);
+
+}
+
+.a1:hover::before{
+    transform: scaleX(1);
+    transition: .9s;
+}
+
+
+.span1{
+    color: white;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(102, 68, 12);
+    border-radius: 50%;
+}
+
+.span2{
+    font-size: 15px;
+}
+/* ////////------home--------////////////////// */
+
+.img1{
+    width: 100%;
+    margin-top: 1px;
+
+}
+
+.contener2{
+    margin: auto;
+    width: 80%;
+}
+
+/* ..........section2.............. */
+
+
+.contener3{
+    width: 80%;
+    height: 40px;
+    margin: auto;
+}
+
+.contener3:hover .div-h2-Special{
+    
+    width: 130px;
+    transition: .4s;
+}
+
+
+
+
+.h2-Special{
+    margin: 20px auto;
+    font-size: 30px;
+    margin-left: 40.5%;
+    
+}
+
+.div-h2-Special{
+    width: 100px;
+    height: 2px;
+    margin: -10px auto;
+    background-color:rgb(102, 68, 12);
+}
+.div-h2-Special:hover{
+    width: 150px;
+    transition: .5s;
+}
+/* ...........contener-1.................... */
+
+.contener-1{
+    margin:  40px auto;
+    width: 80%;
+}
+
+.parent{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 300px 300px 300px 300px;
+}
+
+.div-grid1{
+    margin: 5px 5px;
+    background-color: rgb(250, 250, 251);
+
+}
+.div-grid0{
+    grid-column-start:1;
+    grid-column-end: 3;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.img-10{
+    width: 100%;
+    height: 80%;
+}
+
+.oo{
+    margin-left: 35px;
+    font-size: 25px;
+    color: red;
+    visibility: hidden;
+    opacity: 0;
+}
+.div-grid1:hover .oo{
+    visibility: visible;
+    opacity: 1;
+    transition: .7s;
+}
+
+.p-1{ font-size: 17px;
+    line-height: 25px;
+}
+
+.ic2{
+    font-size: 40px;
+    color: rgb(255, 217, 0);
+}
+
+.img-11{
+    width: 100%;
+    height: 100%;
+}
+
+.p-1{
+    padding-left: 10px;
+    padding-top: -30px;
+    
+    
+}
+
+.p-2{
+    margin-left: 10px;
+    padding-top: -20px;
+    display: inline;
+}
+/* ----------------------###-------------------------- */
+
+ul{
+    position: absolute;
+    display: flex;
+    left: 10%;
+    top: 200%;
+    margin: 0;
+    /* padding: 0px 10px; */
+    padding: 20px 0;
+    background-color: rgb(250, 250, 251);
+    border-radius: 10px;
+    justify-content: center;
+    width: 80%;
+    
+    
+}
+
+ul li{
+    list-style: none;
+    text-align: center;
+    border-right: 1px solid rgba(0, 0, 0, .4);
+    display: block;
+}
+
+ul li:last-child{
+    border-right: none;
+}
+
+ul li a {
+    padding: 0px 30px;
+    display: block;
+    
+    
+}
+ul li a .icon{
+    overflow: hidden;
+    margin: 0 auto 10px;
+    background-color: rgb(250, 250, 251);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    
+    
+}
+
+ul li a .icon .fas{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    transition: .5s;
+    color: rgb(255, 217, 0);;
+    
+    
+}
+
+ul li a:hover .icon .fas{
+    transform: translateY(-100%);
+    color: rgb(102, 68, 12);
+}
+/* ----------------------##---------------------- */
+/* .h01{
+    
+    position: absolute;
+    top: 230%;
+    left: 50%;
+    transform: translate(-50%,0%);
+} */
+.div01{
+    width: 80%;
+    height: 50px;
+    
+    margin: auto;
+    margin-top: -30%;
+    /* text-align: center; */
+    
+}
+
+.h01{
+    text-align: center;
+}
+.div02{
+    width: 100px;
+    height: 3px;
+    background-color: rgb(9, 9, 9);
+    margin: 5px auto;
+}
+
+.div01:hover .div02{
+    width: 130px;
+    transition:.7s;
+}
+
+.div00{
+  display: flex;
+  justify-content: center;
+}
+
+.div-Wooden{
+    margin: 10px 20px;
+}
+
+/* ooooooooooooooooooooooooooooooooooooooooo */
+.contener-0-{
+    margin: 100px auto;
+    width: 80%;
+}
+
+.team-item-0-{
+    width: 300px;
+    height: 350px;
+    background-color: royalblue;
+    background-image: url(../image/category-banner1.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.div-overlay-0-{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+
+    background-image: url(../image/category-banner2.jpg);
+    
+    background-size: cover;
+    transform:scale(0,1);
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: center;
+    
+    
+
+}
+
+.team-item-0-:hover .div-overlay-0-{
+    visibility: visible;
+    opacity: .7;
+    transition: 1s;
+    transform: scale(1,1);
+    
+    
+}
+
+.icon-1-0- {
+    position: absolute;
+    
+    
+    height: 60px;
+    text-align: center;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.icon-1-0- i{
+    
+    background-color: rgb(231, 212, 212);
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.divww{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: 200px;
+    margin: auto;
+}
+
+.man{
+    width: 300px;
+    height: 400px;
+    background-color:white;
+}
+
+.star{
+    color: yellow;
+}
+
+
